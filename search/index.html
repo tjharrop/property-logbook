@@ -1,0 +1,40 @@
+---
+breadcrumb: Property Search
+name: Property Search
+---
+
+<label for="text-input">Property address:</label>
+<input class="au-text-input" name="text-input" id="address_field" type="text" value="value">
+<button class="au-btn">
+  Search
+</button>
+
+<script>
+(function(){
+  var initAF = function(){
+    var widget = new AddressFinder.Widget(
+      document.getElementById('address_field'),
+      'NWYBMCX6V8H3DEJK7RQG',
+      'AU', {
+                "address_params": {
+                    "post_box": "0",
+                    "state_codes": "NSW"
+                }
+            }
+    );
+  };
+
+  function downloadAF(f){
+    var script = document.createElement('script');
+    script.src = 'https://api.addressfinder.io/assets/v3/widget.js';
+    script.async = true;
+    script.onload=f;
+    document.body.appendChild(script);
+  };
+
+  document.addEventListener("DOMContentLoaded", function () {
+    downloadAF(initAF);
+  });
+
+})();
+</script>
