@@ -77,6 +77,7 @@ name: Property Result
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+    var xhttp = new XMLHttpRequest();
   // https://api.domain.com.au/v1/properties/_suggest?pageSize=1&channel=Residential&terms=Unit%201402%2C%20157%20Redfern%20Street%2C%20REDFERN%20NSW%202016
   xhttp.open("GET", "https://api.domain.com.au/v1/properties/_suggest?pageSize=1&channel=Residential&terms=" + getParameterByName('text-input'), true);
   xhttp.send();
