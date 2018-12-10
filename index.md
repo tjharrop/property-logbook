@@ -1,6 +1,6 @@
-# NSW Property Logbook
+# Home History NSW
 
-## What is the NSW property logbook?
+## What is Home History?
 
 The NSW Department for Services, Finance, and Innovation has worked with builders, building industry associations, insurance companies, and other NSW Government teams to create a logbook for all properties in NSW. 
 
