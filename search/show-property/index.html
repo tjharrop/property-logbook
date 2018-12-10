@@ -1,9 +1,23 @@
 ---
 layout: nosidenav
-breadcrumb: 1501 157 Redfern St
-name: 1501 157 Redfern St
+breadcrumb: Property Result
+name: Property Result
 ---
-
+<script type="text/javascript">
+  function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+  // https://api.domain.com.au/v1/properties/_suggest?pageSize=1&channel=Residential&terms=Unit%201402%2C%20157%20Redfern%20Street%2C%20REDFERN%20NSW%202016
+  xhttp.open("GET", "https://api.domain.com.au/v1/properties/_suggest?pageSize=1&channel=Residential&terms=" . getParameterByName('text-input'), true);
+  xhttp.send();
+  document.getElementById("demo").innerHTML = xhttp.responseText;
+</script>
 <h1>1501/157 Redfern St</h1>
 <hr>
     <div class="row container-fluid">
@@ -65,6 +79,9 @@ name: 1501 157 Redfern St
         </table>
       </div>
     </div>
+<hr>
+<p id="demo">Let AJAX change this text.</p>
+
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.2/bootstrap-table.min.css">
