@@ -7,6 +7,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tjharrop
 github_username:  tjharrop
 
+stage: prototype
+
 # Build settings
 markdown: kramdown
 plugins:
@@ -14,4 +16,3 @@ plugins:
 
 remote_theme: tjharrop/NSW-jekyll-theme
 
-stage: prototype
