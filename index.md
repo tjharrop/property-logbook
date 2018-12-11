@@ -1,3 +1,8 @@
+---
+layout: nosidenav
+stage: prototype
+---
+
 # Home History NSW
 
 ## What is Home History?
