@@ -2,7 +2,7 @@ title: Home History
 email: tjharrop@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A history of building work on properties in NSW
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/property-logbook" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tjharrop
 github_username:  tjharrop
@@ -15,4 +15,3 @@ plugins:
   - jekyll-feed
 
 remote_theme: tjharrop/NSW-jekyll-theme
-
